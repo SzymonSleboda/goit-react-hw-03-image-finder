@@ -1,9 +1,20 @@
 import React from 'react'
+import PropTypes from 'prop-types';
+import s from './Button.module.css';
 
-const Button = () => {
+const Button = ({text, onClick}) => {
   return (
-    <div>Button</div>
+    <button className={s.Button} type="button" onClick={onClick}>{text}</button>
   )
 }
 
-export default Button
+
+
+Button.defaultProps = {
+  onClick: () => null,
+};
+Button.propType = {
+  onClick: PropTypes.func,
+};
+
+export default Button;
