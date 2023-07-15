@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import s from './App.module.css';
-import Searchbar from 'components/Searchbar';
-import ImageGallery from 'components/ImageGallery';
-import Button from 'components/Button';
-import Loader from 'components/Loader';
-import Modal from 'components/Modal';
+import Searchbar from 'components/Searchbar/Searchbar';
+import ImageGallery from 'components/ImageGallery/ImageGallery';
+import Button from 'components/Button/Button';
+import Loader from 'components/Loader/Loader';
+import Modal from 'components/Modal/Modal';
 import { fetchMovies } from './utilities/apiService';
 import { ToastContainer, toast } from 'react-toastify';
 
-export default class App extends Component {
+class App extends Component {
   state = {
     image: [],
     searchImage: null,
@@ -102,3 +102,5 @@ export default class App extends Component {
     );
   }
 }
+
+export default App;
