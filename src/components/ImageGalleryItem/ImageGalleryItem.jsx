@@ -1,11 +1,19 @@
-import React from 'react'
+import React from 'react';
+import s from './ImageGalleryItem.module.css';
 
-const ImageGalleryItem = () => {
+function ImageGalleryItem({ onClick, img }) {
+  const { webformatURL, tags, id } = img;
   return (
-<li class="gallery-item">
-  <img src="" alt="" />
-</li>
-  )
+    <li className={s.ImageGalleryItem}>
+      <img
+        src={webformatURL}
+        alt={tags}
+        id={id}
+        className={s.image}
+        onClick={onClick}
+      />
+    </li>
+  );
 }
 
-export default ImageGalleryItem
+export default ImageGalleryItem;
