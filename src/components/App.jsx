@@ -77,7 +77,7 @@ class App extends Component {
     const { error, image, loading, showModal, largeImage } = this.state;
 
     return (
-      <div className={s.root}>
+      <div className={s.App}>
         <Searchbar onSubmit={this.onFormSubmit} />
         <ImageGallery searchQuery={image} onClick={this.modalShow} />
 
