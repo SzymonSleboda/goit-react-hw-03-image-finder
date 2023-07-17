@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import s from './App.module.css';
-import SearchBar from 'components/SearchBar/SearchBar';
+import Searchbar from 'components/SearchBar/Searchbar';
 import ImageGallery from 'components/ImageGallery/ImageGallery';
 import Button from 'components/Button/Button';
 import Loader from 'components/Loader/Loader';
@@ -78,7 +78,7 @@ class App extends Component {
 
     return (
       <div className={s.App}>
-        <SearchBar onSubmit={this.onFormSubmit} />
+        <Searchbar onSubmit={this.onFormSubmit} />
         <ImageGallery searchQuery={image} onClick={this.modalShow} />
 
         {image.length !== 0 && (
