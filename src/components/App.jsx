@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import s from './App.module.css';
-import Searchbar from 'components/SearchBar/Searchbar';
+import Searchbar from 'components/SearchBar/SearchBar';
 import ImageGallery from 'components/ImageGallery/ImageGallery';
 import Button from 'components/Button/Button';
 import Loader from 'components/Loader/Loader';
