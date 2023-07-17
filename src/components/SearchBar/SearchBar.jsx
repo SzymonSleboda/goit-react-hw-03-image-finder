@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { toast } from 'react-toastify';
-import s from './Searchbar.module.css';
+import s from './SearchBar.module.css';
 
-class Searchbar extends Component {
+class SearchBar extends Component {
   state = {
     img: '',
   };
@@ -34,7 +34,7 @@ class Searchbar extends Component {
   };
   render() {
     return (
-      <header className={s.searchbar}>
+      <header className={s.searchBar}>
         <form className={s.form} onSubmit={this.handleSubmit}>
           <input
             value={this.state.img}
@@ -54,4 +54,4 @@ class Searchbar extends Component {
   }
 }
 
-export default Searchbar;
+export default SearchBar;
